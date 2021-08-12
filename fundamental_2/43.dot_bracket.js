@@ -8,7 +8,8 @@ const javier = {
 
 console.info(javier.lastName);
 console.log(javier['lastName']);
-
+javier.location = 'Tabasco';
+javier.mail = 'jquirogaa@hmujertab.gob.mx'
 
 const interestedIn = prompt('What the hell do you want to know about me? Choose between firstName, lastName, age, job, and friends')
-console.log(javier[interestedIn])
+console.log(javier)

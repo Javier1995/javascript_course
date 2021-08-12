@@ -1,0 +1,25 @@
+.contenedor{
+    padding-top:10px;
+    margin: 1rem;
+    height: 100vh;
+    background:#c5c5c5c5;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu{
+    width: 50%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    background: #860629;
+    margin-top:20000px;
+    box-shadow: 5px 4px 8px;
+}
+
+.elemento {
+    color: white;
+    margin: auto;
+    font-size: 20px;
+}
+
