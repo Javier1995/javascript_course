@@ -1,6 +1,8 @@
 ///////////////////////////////////////
 // Coding Challenge #3
 
+'use strict'
+
 /*
 Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
 1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
@@ -12,5 +14,32 @@ GOOD LUCK 😀
 const mark = {
     fullName: 'Mark',
     mass: 78,
+    height: 1.69,
+    calcBMI:function() {
+        this.BMI =  this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+const john = {
+    fullName: 'john',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function() {
+        this.BMI =  this.mass / (this.height * this.height);
+        return this.BMI;
+    }
     
 };
+
+
+console.log(john.calcBMI(), mark.calcBMI());
+if(john.calcBMI() > mark.calcBMI()) {
+    console.log(john.fullName);
+} else if(mark.calcBMI() > john.calcBMI()  ) {
+    console.log(mark.fullName);
+} else {
+    console.log("Empatados");
+}
+
+
