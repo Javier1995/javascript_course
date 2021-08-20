@@ -117,3 +117,10 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+.win {
+  background: green;
+}
+button:disabled {
+  cursor: not-allowed;
+}
